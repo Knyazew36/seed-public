@@ -37,31 +37,26 @@
         </div>
       </header>
       <main>
-        <div class="preloader">
-          <div class="clear-loading loading-effect-2"><span></span></div>
+        <div class="my-modal">
+          <div class="overlay"></div>
+          <div class="my-modal__inner">
+            <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
+            <h3 class="my-modal__title">Оставить заявку</h3>
+            <form class="my-modal__form" action="#">
+              <input type="text" placeholder="Имя"/>
+              <input type="text" placeholder="Фамилия"/>
+              <input type="number" placeholder="Телефонный номер"/>
+              <textarea id="1" name="comment" placeholder="Комментарий"></textarea>
+            </form>
+            <div class="my-modal__btn">
+              <button class="btn btn_yellow">Отправить</button>
+            </div>
+          </div>
         </div>
         <section class="header__bottom">
           <div class="rev_slider_wrapper header__bottom">
             <div class="rev_slider" id="rev-slider1">
               <ul>
-                <!--
-                <li data-transition="random">
-                <img src="images/seed/slide-1.jpg" alt="" data-bgposition="center center" data-no-retina />
-                <div class="bg-slider-1"></div>
-                <div class="tp-caption tp-resizeme title-55" data-x="['left','left','left','center']"
-                data-hoffset="['40','90','30','14']" data-y="['middle','middle','middle','middle']"
-                data-voffset="['0','40','0','40']" data-fontsize="['72','62','50','42']"
-                data-lineheight="['86','70','64','48']" data-width="full" data-height="none" data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="400" data-splitin="none"
-                data-splitout="none" data-responsive_offset="on">
-                <span class="slide-tittle">
-                "BIG GRAIN"</span>
-                </div>
-                </li>
-                -->
                 <li data-transition="random"><img src="images/slide-2.jpg" alt="" data-bgposition="center center" data-no-retina="">
                   <div class="bg-slider-1"></div>
                   <div class="tp-caption tp-resizeme title-55" data-x="['left','left','left','center']" data-hoffset="['40','90','30','14']" data-y="['middle','middle','middle','middle']" data-voffset="['0','40','0','40']" data-fontsize="['72','62','50','42']" data-lineheight="['86','70','64','48']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="400" data-splitin="none" data-splitout="none" data-responsive_offset="on"><span class="slide-tittle">Выгодные договорные цены и качественная продукция.</span></div>
@@ -86,7 +81,7 @@
             </div>
           </div>
         </section>
-        <section class="section-about" data-aos="fade-up">
+        <section class="section-about" data-aos="">
           <div class="container">
             <div class="section-about__inner">
               <h2 class="section-about__title">Компания "Big Grain" — это надежный партнер на рынке экспорта сельскохозяйственной продукции.</h2>
@@ -102,182 +97,62 @@
             </div>
           </div>
         </section>
-        <section class="section-banner parallax1">
-          <div class="overlay-banner"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-sm-12">
-                <div class="tf-banner center wow fadeInUp"><img class="logo-yelow" src="images/logo-yelow.png" alt="image">
-                  <div class="title-banner" data-depth="0.2">
-                    Установление долгосрочных партнерских отношений с
-                    сельхозпроизводителями в России и странах СНГ является важной
-                    составляющей работы, что свидетельствует о нашей надежности и
-                    профессионализме.
-                  </div>
-                  <div class="button-banner"><a class="gain-button" href="team.html">Узнать о нас больше</a></div>
-                </div>
-              </div>
-            </div>
+        <section class="banner parallax1">
+          <div class="banner__inner"> 
+            <div class="banner__logo"><img src="images/logo-yelow.png" alt="logo"/></div>
+            <div class="banner__text">Установление долгосрочных партнерских отношений с сельхозпроизводителями в России и странах СНГ является важной составляющей работы, что свидетельствует о нашей надежности и профессионализме.</div>
+            <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
           </div>
         </section>
-        <section class="direction mt-section" data-aos="fade-up">
+        <section class="direction mt-section" data-aos="">
           <div class="container">
             <div class="direction__inner">
               <div class="direction__left">
-                <div class="direction__img"><img class="direction__img_1" src="images/about.JPG" alt="">
-                  <!--
-                  <img src="./../../images/seed/about.JPG" class="direction__img_2" alt="" />
-                  <img src="./../../images/seed/about.JPG" class="direction__img_3" alt="" />
-                  -->
-                </div>
+                <div class="direction__img"><img class="direction__img_1" src="images/about.JPG" alt=""/></div>
               </div>
               <div class="direction__right">
-                <div class="direction__decor"><img src="images/history.png" alt="decor"></div>
+                <div class="direction__decor"><img src="images/history.png" alt="decor"/></div>
                 <div class="direction__row">
                   <h2 class="direction__title">Основными направлениями нашей деятельности являются продажа:</h2>
                   <ul class="direction__list">
-                    <li data-aos="fade-right">МАСЛИЧНОЙ И МЕЛКОСЕМЯННОЙ КУЛЬТУРЫ</li>
-                    <li data-aos="fade-right">ЗЕРНОБОБОВОЙ И БОБОВОЙ КУЛЬТУРЫ,</li>
-                    <li data-aos="fade-right">КРУП,</li>
-                    <li data-aos="fade-right">ЗЕРНОБОБОВОЙ И БОБОВОЙ КУЛЬТУРЫ,</li>
+                    <li data-aos="fade-right">- Масличной и мелкосемянной культуры</li>
+                    <li data-aos="fade-right">- Зернобытовой и бобовой культуры</li>
+                    <li data-aos="fade-right">- Круп</li>
+                    <li data-aos="fade-right">- Зернобытовой и бобовой культуры</li>
                   </ul>
-                </div><a class="direction__button gain-button button-color color2" data-aos="fade-up" href="service-dtail.html">Смотреть нашу продукцию</a>
+                </div>
+                <button class="btn btn_green direction__button">Смотреть нашу продукцию</button>
               </div>
             </div>
           </div>
         </section>
-        <section class="service mt-section" data-aos="fade-up">
+        <section class="service mt-section" data-aos="">
           <div class="container">
             <div class="service__inner">
               <h2 class="service__title">Приглашаем вас ознакомиться с предложением нашей компании для дальнейшего сотрудничества!</h2>
               <div class="service__box">
-                <div class="col-md-3 col-sm-6">
-                  <div class="box-service" data-aos="fade-up"><img class="service-img" src="images/card-1.JPG" alt="">
-                    <div class="inner-box-service">
-                      <!-- <p class="wrap-title bottom20">Farm House</p>--><a class="service__subtitle" href="service.html">
-                        <h4>Масличные и мелкосемянные культуры</h4></a>
-                      <!--
-                      <p class="subtext-service">
-                      There are many variations of passages.
-                      </p>
-                      --><a class="icon-right" href="service.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
+                <div class="service-card">
+                  <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt=""/></div>
+                  <div class="service-card__body"> 
+                    <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="icon-right service-card__button" href="service.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="box-service" data-aos="fade-up"><img class="service-img" src="images/card-1.JPG" alt="">
-                    <div class="inner-box-service">
-                      <!-- <p class="wrap-title bottom20">Farm House</p>--><a class="service__subtitle" href="service.html">
-                        <h4>Масличные и мелкосемянные культуры</h4></a>
-                      <!--
-                      <p class="subtext-service">
-                      There are many variations of passages.
-                      </p>
-                      --><a class="icon-right" href="service.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="box-service" data-aos="fade-up"><img class="service-img" src="images/card-1.JPG" alt="">
-                    <div class="inner-box-service">
-                      <!-- <p class="wrap-title bottom20">Farm House</p>--><a class="service__subtitle" href="service.html">
-                        <h4>Масличные и мелкосемянные культуры</h4></a>
-                      <!--
-                      <p class="subtext-service">
-                      There are many variations of passages.
-                      </p>
-                      --><a class="icon-right" href="service.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="box-service" data-aos="fade-up"><img class="service-img" src="images/card-1.JPG" alt="">
-                    <div class="inner-box-service">
-                      <!-- <p class="wrap-title bottom20">Farm House</p>--><a class="service__subtitle" href="service.html">
-                        <h4>Масличные и мелкосемянные культуры</h4></a>
-                      <!--
-                      <p class="subtext-service">
-                      There are many variations of passages.
-                      </p>
-                      --><a class="icon-right" href="service.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!--
-                <div class="col-md-3 col-sm-6">
-                <div class="box-service active" data-aos="fade-up">
-                <img src="images/home/service-2.png" alt="" class="" />
-                <div class="inner-box-service">
-                <p class="wrap-title bottom20">Agriculture</p>
-                <a href="service.html" class="">
-                <h3>Бобовые и зернобобовые культуры</h3>
-                </a>
-                <p class="subtext-service">
-                There are many variations of passages.
-                </p>
-                <a href="service.html" class="icon-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                </a>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                <div class="box-service" data-aos="fade-up">
-                <img src="images/home/service-3.png" alt="" class="" />
-                <div class="inner-box-service">
-                <p class="wrap-title bottom20">Vegetables</p>
-                <a href="service.html" class="">
-                <h3>Крупы</h3>
-                </a>
-                <p class="subtext-service">
-                There are many variations of passages.
-                </p>
-                <a href="service.html" class="icon-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                </a>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                <div class="box-service" data-aos="fade-up">
-                <img src="images/home/service-4.png" alt="" class="" />
-                <div class="inner-box-service">
-                <p class="wrap-title bottom20">Dairy Tea</p>
-                <a href="service.html" class="">
-                <h3>Зерновые культуры</h3>
-                </a>
-                <p class="subtext-service">
-                There are many variations of passages.
-                </p>
-                </a>
-                </div>
-                </div>
-                </div>
-                -->
               </div>
-              <!-- <a href="service.html" class="icon-right"><i class="fa fa-angle-right service__button" aria-hidden="true"></i>-->
             </div>
           </div>
         </section>
-        <section class="section-banner parallax1">
-          <div class="overlay-banner"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-sm-12">
-                <div class="tf-banner center wow fadeInUp"><img class="logo-yelow" src="images/logo-yelow.png" alt="image">
-                  <div class="title-banner">
-                    Качество, сервис и надежность — это основные факторы, которым
-                    «Big Grain» придает особое значение!
-                  </div>
-                  <div class="button-banner"><a class="gain-button" href="team.html">Узнать о нас больше</a></div>
-                </div>
-              </div>
-            </div>
+        <section class="banner parallax1">
+          <div class="banner__inner"> 
+            <div class="banner__logo"><img src="images/logo-yelow.png" alt="logo"/></div>
+            <div class="banner__text">Качество, сервис и надежность — это основные факторы, которым «Big Grain» придает особое значение!</div>
+            <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
           </div>
         </section>
         <section class="qualities mt-section">
           <div class="container">
             <div class="qualities__inner">
               <div class="qualities__card" data-aos="fade-up">
-                <div class="qualities__img"><img src="images/3-min.JPG" alt=""></div>
+                <div class="qualities__img"><img src="images/3-min.JPG" alt=""/><img class="qualities__decor" src="images/logo-yelow.png" alt="logo"/></div>
                 <div class="qualities__box">
                   <h3 class="qualities__title">           Надежность — это неотъемлемая черта «Big Grain».</h3>
                   <p class="qualities__text">
@@ -286,35 +161,6 @@
                     обязательства и сохранять долгосрочные отношения с партнерами
                     делает нашу компанию приоритетной на рынке
                     сельскохозяйственных продуктов.
-                  </p>
-                </div>
-              </div>
-              <div class="qualities__card" data-aos="fade-up">
-                <div class="qualities__img"><img src="images/3-min.JPG" alt=""></div>
-                <div class="qualities__box">
-                  <h3 class="qualities__title">Сервис - еще одна важная составляющая бизнеса.</h3>
-                  <p class="qualities__text">Стремление соблюдать договоренности и сроки, а также предоставлять выгодные цены, свидетельствует о превосходном сервисе. Коммуникация, оперативность и профессионализм взаимодействия с клиентами являются факторами, которые делают нашу компанию успешной.</p>
-                </div>
-              </div>
-              <div class="qualities__card" data-aos="fade-up">
-                <div class="qualities__img"><img src="images/3-min.JPG" alt=""></div>
-                <div class="qualities__box">
-                  <h3 class="qualities__title">     Качество продукции является основным аспектом.</h3>
-                  <p class="qualities__text">
-                    Мы стремимся предложить только высококлассный товар своим
-                    клиентам. Это помогает создать доверие и установить
-                    долгосрочные партнерские отношения.
-                  </p>
-                </div>
-              </div>
-              <div class="qualities__card" data-aos="fade-up">
-                <div class="qualities__img"><img src="images/3-min.JPG" alt=""></div>
-                <div class="qualities__box">
-                  <h3 class="qualities__title">     Качество продукции является основным аспектом.</h3>
-                  <p class="qualities__text">
-                    Мы стремимся предложить только высококлассный товар своим
-                    клиентам. Это помогает создать доверие и установить
-                    долгосрочные партнерские отношения.
                   </p>
                 </div>
               </div>
@@ -330,58 +176,27 @@
                 <div class="swiper-slide"><img src="images/3-min.JPG" alt=""></div>
                 <div class="swiper-slide"><img src="images/4-min.JPG" alt=""></div>
                 <div class="swiper-slide"><img src="images/5-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/6-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/7-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/8-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/9-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/10-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/1-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/2-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/3-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/4-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/5-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/6-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/7-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/8-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/9-min.JPG" alt=""></div>
-                <div class="swiper-slide"><img src="images/10-min.JPG" alt=""></div>
               </div>
             </div>
           </div>
         </section>
-        <div class="my-modal">
-          <div class="overlay"></div>
-          <div class="my-modal__inner">
-            <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
-            <h3 class="my-modal__title">Оставить заявку</h3>
-            <form class="my-modal__form" action="#">
-              <input type="text" placeholder="Имя">
-              <input type="text" placeholder="Фамилия">
-              <input type="number" placeholder="Телефонный номер">
-              <textarea id="1" name="comment" placeholder="Комментарий"></textarea>
-              <button class="submit my-modal__button">Отправить</button>
-            </form>
-          </div>
-        </div>
         <div class="button-go-top"><a class="go-top" href="#" title=""><i class="fa fa-chevron-up"></i></a></div>
       </main>
-      <footer class="footer">
+      <footer class="footer mt-section">
         <div class="footer__inner">
           <div class="footer__col"><img class="footer__logo" src="images/logo-1-new.png" alt="logo">
             <p class="footer__text">© 2023 "Big Grain"</p>
           </div>
           <div class="footer__col"></div>
           <div class="footer__col footer__links">
-            <p class="footer__link" data-aos="fade-left"><span>Адрес:</span>   Lorem ipsum dolor sit amet consectetur.</p>
-            <p class="footer__link" data-aos="fade-left"><span>Телефон:</span>   Lorem ipsum dolor sit amet consectetur.</p>
-            <p class="footer__link" data-aos="fade-left"><span>Время работы:</span>   Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="footer__link" data-aos="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д. 11, офис 411</p><a class="footer__link" href="tel:89202277757" data-aos="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link" href="mailto:biggrain.buh@mail.ru" data-aos="fade-left"><span>Электронная почта</span>  Biggrain.buh@mail.ru</a>
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="container">
-            <div class="footer-bottom__inner">
-              <p class="footer-bottom__text"> Оставьте заявку и наш менеджер перезвонит вам!</p>
-              <div class="button-footer"><a class="gain-button" data-aos="fade-left" href="contact.html">Оставить заявку</a></div>
+          <div class="footer-bottom__inner">
+            <p class="footer-bottom__text"> Оставьте заявку и наш менеджер перезвонит вам!</p>
+            <div class="button-footer">
+              <button class="btn btn_yellow">Оставить заявку</button>
             </div>
           </div>
         </div>
@@ -392,14 +207,11 @@
     <script src="rev-slider/javascript/jquery.easing.js"></script>
     <script src="rev-slider/javascript/main.js"></script>
     <script src="rev-slider/javascript/index.js"></script>
-    <!-- Revolution Slider-->
     <script src="rev-slider/js/jquery.themepunch.tools.min.js"></script>
     <script src="rev-slider/js/jquery.themepunch.revolution.min.js"></script>
     <script src="rev-slider/javascript/rev-slider.js"></script>
-    <!-- main AOS-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading-->
     <script src="rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
     <script src="rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
     <script src="rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
