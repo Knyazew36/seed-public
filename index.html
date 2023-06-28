@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&amp;display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="assets/index-0be3784c.js"></script>
+    <script type="module" crossorigin src="assets/index-696e03d6.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -42,7 +42,7 @@
       </header>
       <main>
         <div class="slider preview">
-          <div class="swiper preview-slider">
+          <div class="swiper preview-slider" data-swiper="top">
             <div class="swiper-wrapper">
               <div class="swiper-slide preview__slide"> 
                 <div class="preview__block">
@@ -78,7 +78,7 @@
             <form class="my-modal__form" action="#">
               <input type="text" placeholder="Имя"/>
               <input type="text" placeholder="Фамилия"/>
-              <input type="number" placeholder="Телефонный номер"/>
+              <input type="text" placeholder="Телефонный номер"/>
               <textarea id="1" name="comment" placeholder="Комментарий"></textarea>
             </form>
             <div class="my-modal__btn">
@@ -91,7 +91,7 @@
             <div class="section-about__inner">
               <h2 class="section-about__title">Компания "Big Grain" — это надежный партнер на рынке экспорта сельскохозяйственной продукции.</h2>
               <div class="section-about__video">
-                <video id="video" src="video-1.mp4"></video>
+                <video id="video" src="video-1.mp4" muted="muted"></video>
                 <button class="section-about__button">
                   <svg class="bi bi-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
@@ -102,7 +102,8 @@
           </div>
         </section>
         <section class="banner">
-          <div class="banner__inner"> 
+          <div class="banner__img"></div>
+          <div class="banner__inner">
             <div class="banner__logo"><img src="images/logo-yelow.png" alt="logo"/></div>
             <div class="banner__text">Установление долгосрочных партнерских отношений с сельхозпроизводителями в России и странах СНГ является важной составляющей работы, что свидетельствует о нашей надежности и профессионализме.</div>
             <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
@@ -163,7 +164,8 @@
           </div>
         </section>
         <section class="banner">
-          <div class="banner__inner"> 
+          <div class="banner__img"></div>
+          <div class="banner__inner">
             <div class="banner__logo"><img src="images/logo-yelow.png" alt="logo"/></div>
             <div class="banner__text">Качество, сервис и надежность — это основные факторы, которым «Big Grain» придает особое значение!</div>
             <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
@@ -223,6 +225,24 @@
                     сельскохозяйственных продуктов.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-swiper mt-section">
+          <div class="section-swiper__inner">
+            <div class="swiper" data-swiper="bottom">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1-min.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/2-min.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/3-min2.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/4-min.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/5-min.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/6-min.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/7-min.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/8-min.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/9-min.JPG" alt=""/></div>
+                <div class="swiper-slide"><img src="images/10-min.JPG" alt=""/></div>
               </div>
             </div>
           </div>
