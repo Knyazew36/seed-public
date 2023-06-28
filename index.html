@@ -11,11 +11,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&amp;display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="assets/index-10801d1c.js"></script>
+    <script type="module" crossorigin src="assets/index-fbd16f03.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <div class="wrapper">
+      <div class="my-modal">
+        <div class="overlay"></div>
+        <div class="my-modal__inner">
+          <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
+          <h3 class="my-modal__title">Оставить заявку</h3>
+          <form class="my-modal__form" action="#">
+            <input type="text" placeholder="Имя"/>
+            <input type="text" placeholder="Фамилия"/>
+            <input type="text" placeholder="Телефонный номер"/>
+            <textarea id="1" name="comment" placeholder="Комментарий"></textarea>
+          </form>
+          <div class="my-modal__btn">
+            <button class="btn btn_yellow">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div class="preloader">
+        <div class="clear-loading loading-effect-2"><span></span></div>
+      </div>
       <header class="header">
         <div class="header__inner">
           <div class="header__col"><a class="header__logo" href="#">
@@ -67,31 +86,12 @@
             </div>
           </div>
         </div>
-        <div class="preloader">
-          <div class="clear-loading loading-effect-2"><span></span></div>
-        </div>
-        <div class="my-modal">
-          <div class="overlay"></div>
-          <div class="my-modal__inner">
-            <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
-            <h3 class="my-modal__title">Оставить заявку</h3>
-            <form class="my-modal__form" action="#">
-              <input type="text" placeholder="Имя"/>
-              <input type="text" placeholder="Фамилия"/>
-              <input type="text" placeholder="Телефонный номер"/>
-              <textarea id="1" name="comment" placeholder="Комментарий"></textarea>
-            </form>
-            <div class="my-modal__btn">
-              <button class="btn btn_yellow">Отправить</button>
-            </div>
-          </div>
-        </div>
         <section class="section-about" data-aos="fade-up">
           <div class="container">
             <div class="section-about__inner">
               <h2 class="section-about__title">Компания "Big Grain" — это надежный партнер на рынке экспорта сельскохозяйственной продукции.</h2>
               <div class="section-about__video">
-                <video id="video" src="video-1.mp4" playsinline="playsinline"></video>
+                <video id="video" src="video-1.mp4" playsinline="playsinline" autoplay="autoplay"></video>
                 <button class="section-about__button">
                   <svg class="bi bi-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
@@ -109,13 +109,13 @@
             <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
           </div>
         </section>
-        <section class="direction mt-section" data-aos="fade-up">
+        <section class="direction mt-section">
           <div class="container">
             <div class="direction__inner">
-              <div class="direction__left">
+              <div class="direction__left" data-aos="fade-up">
                 <div class="direction__img"><img class="direction__img_1" src="images/about.jpg" alt=""/></div>
               </div>
-              <div class="direction__right">
+              <div class="direction__right" data-aos="fade-up">
                 <div class="direction__row">
                   <h2 class="direction__title">Основными направлениями нашей деятельности являются продажа:</h2>
                   <ul class="direction__list">
@@ -261,8 +261,8 @@
         </div>
         <div class="footer-bottom">
           <div class="footer-bottom__inner">
-            <p class="footer-bottom__text"> Оставьте заявку и наш менеджер перезвонит вам</p>
-            <div class="button-footer">
+            <p class="footer-bottom__text" data-aos="fade-up"> Оставьте заявку и наш менеджер перезвонит вам</p>
+            <div class="button-footer" data-aos="fade-up">
               <button class="btn btn_yellow">Оставить заявку</button>
             </div>
           </div>
