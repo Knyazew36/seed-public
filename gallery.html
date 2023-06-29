@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Main</title>
+    <title>gallery</title>
     <meta content="width=device-width, initial-scale=1  maximum-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -58,9 +58,24 @@
         </div>
       </header>
       <main>
-        <div class="inner"></div>
+        <div class="preview-page__preview parallax"><img src="images/slide-2.jpg" alt=""/>
+          <div class="preview-page__titlebox">
+            <h1 class="preview-page__title">Галерея</h1>
+            <div class="breadcrumb"> <a class="breadcrumb__link breadcrumb__homie" href="pages/index/index.html">Главная</a><span>></span>
+              <div class="breadcrumb__link breadcrumb__target" href="#">Галерея</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-block">
+          <div class="container"> 
+            <div class="gallery-block__box">
+              <div class="gallery-block__images"><a class="gallery-block__img fancybox" data-fancybox="gallery" href="images/seed/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="images/seed/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="images/seed/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="images/seed/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="images/seed/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="images/seed/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a></div>
+              <button class="btn btn_yellow gallery-block__btn">Еще фото</button>
+            </div>
+          </div>
+        </div>
       </main>
-      <footer class="footer">
+      <footer class="footer mt-section">
         <div class="footer__inner">
           <div class="footer__col"><img class="footer__logo" src="images/logo-1-new.png" alt="logo">
             <p class="footer__text">© 2023 "Big Grain"</p>
