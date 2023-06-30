@@ -1,314 +1,357 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Index</title>
-    <meta content="width=device-width, initial-scale=1  maximum-scale=1" name="viewport">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&amp;display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="assets/index-a5c50fa9.js"></script>
-    <link rel="stylesheet" href="styles/index.css">
-  </head>
-  <body style{ opacity:0 }>
-    <div class="wrapper">
-      <div class="my-modal">
-        <div class="overlay"></div>
-        <div class="my-modal__inner">
-          <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
-          <h3 class="my-modal__title">Оставить заявку</h3>
-          <form class="my-modal__form" action="#">
-            <input type="text" placeholder="Имя"/>
-            <input type="text" placeholder="Фамилия"/>
-            <input type="text" placeholder="Телефонный номер"/>
-            <textarea id="1" name="comment" placeholder="Комментарий"></textarea>
-          </form>
-          <div class="my-modal__btn">
-            <button class="btn btn_yellow">Отправить</button>
-          </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <meta content="width=device-width, initial-scale=1  maximum-scale=1" name="viewport">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&amp;display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="assets/index-a5c50fa9.js"></script>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body style{ opacity:0 }>
+  <div class="wrapper">
+    <div class="my-modal">
+      <div class="overlay"></div>
+      <div class="my-modal__inner">
+        <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span
+            class="visually-hidden"></span></button>
+        <h3 class="my-modal__title">Оставить заявку</h3>
+        <form class="my-modal__form" action="#">
+          <input type="text" placeholder="Имя" />
+          <input type="text" placeholder="Фамилия" />
+          <input type="text" placeholder="Телефонный номер" />
+          <textarea id="1" name="comment" placeholder="Комментарий"></textarea>
+        </form>
+        <div class="my-modal__btn">
+          <button class="btn btn_yellow">Отправить</button>
         </div>
       </div>
-      <div class="preloader">
-        <div class="clear-loading loading-effect-2"><span></span></div>
-      </div>
-      <header class="header">
-        <div class="header__inner">
-          <div class="header__col"><a class="header__logo" href="pages/index/index.html">
-              <div class="header__logo-inner"><img src="images/logo.png" alt="logo"></div></a>
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link">Каталог</a></li>
-                <li class="navigation__item"><a class="navigation__link">Портфолио</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/gallery/index.html">Галерея</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/contact/index.html"> Контакты</a></li>
-              </ul>
-              <div class="navigation__bottom"> 
-                <p class="footer__link" data-a="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д. 11, офис 411</p><a class="footer__link" href="tel:89202277757" data-a="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link" href="mailto:biggrain.buh@mail.ru" data-a="fade-left"><span>Электронная почта:</span>  Biggrain.buh@mail.ru</a>
-              </div>
-            </nav>
-          </div>
-          <div class="header__col">
-            <div class="header__connection">
-              <p class="header__phone">Связаться с нами</p><img class="header__phone-img" src="images/phone.svg" alt="phone">
-            </div>
-          </div>
-          <div class="header__burger"></div>
-        </div>
-      </header>
-      <main>
-        <div class="slider preview">
-          <div class="swiper preview-slider" data-swiper="top">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide preview__slide"> 
-                <div class="preview__block">
-                  <h2 class="preview__title slider-active">  Выгодные договорные цены и качественная продукция.</h2>
-                </div><img class="preview__img" src="images/st-1.jpg" alt=""/>
-              </div>
-              <div class="swiper-slide preview__slide"> 
-                <div class="preview__block">
-                  <h2 class="preview__title">Четкое исполнение договоренностей.</h2>
-                </div><img class="preview__img" src="images/st-2.jpg" alt=""/>
-              </div>
-              <div class="swiper-slide preview__slide"> 
-                <div class="preview__block">
-                  <h2 class="preview__title">Контроль на всех этапах.</h2>
-                </div><img class="preview__img" src="images/st-3.jpg" alt=""/>
-              </div>
-              <div class="swiper-slide preview__slide"> 
-                <div class="preview__block">
-                  <h2 class="preview__title">Порядок с документами.</h2>
-                </div><img class="preview__img" src="images/st-4.jpg" alt=""/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="section-about">
-          <div class="container">
-            <div class="section-about__inner">
-              <h2 class="section-about__title" data-aos="fade-up">Компания "Big Grain" — это надежный партнер на рынке экспорта сельскохозяйственной продукции.</h2>
-              <div class="section-about__video" data-aos="fade-up">
-                <video id="video" src="video-1.mp4" playsinline="playsinline"></video>
-                <button class="section-about__button">
-                  <svg class="bi bi-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="banner">
-          <div class="banner__img parallax"></div>
-          <div class="banner__inner">
-            <div class="banner__logo"><img src="images/logo-yelow.png" alt="logo"/></div>
-            <div class="banner__text">Установление долгосрочных партнерских отношений с сельхозпроизводителями в России и странах СНГ является важной составляющей работы, что свидетельствует о нашей надежности и профессионализме.</div>
-            <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
-          </div>
-        </section>
-        <section class="direction mt-section">
-          <div class="container">
-            <div class="direction__inner">
-              <div class="direction__left" data-aos="fade-up">
-                <div class="direction__img"><img class="direction__img_1" src="images/about.jpg" alt=""/></div>
-              </div>
-              <div class="direction__right" data-aos="fade-up">
-                <div class="direction__row">
-                  <h2 class="direction__title">Основными направлениями нашей деятельности являются продажа:</h2>
-                  <ul class="direction__list">
-                    <li data-aos="fade-right">- Масличной и мелкосемянной культуры</li>
-                    <li data-aos="fade-right">- Зернобытовой и бобовой культуры</li>
-                    <li data-aos="fade-right">- Круп</li>
-                    <li data-aos="fade-right">- Зернобытовой и бобовой культуры</li>
-                  </ul>
-                </div>
-                <button class="btn btn_green direction__button">Смотреть нашу продукцию</button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="service mt-section" data-aos="fade-up">
-          <div class="container">
-            <div class="service__inner">
-              <h2 class="service__title">Приглашаем вас ознакомиться с предложением нашей компании для дальнейшего сотрудничества!</h2>
-              <div class="service__box">
-                <div class="service-card" data-aos="fade-up">
-                  <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt=""/></div>
-                  <div class="service-card__body"> 
-                    <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="service-card__button" href="service.html"> 
-                      <svg class="service-card__arrow" viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#000000">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                              <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]"></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></a>
-                  </div>
-                </div>
-                <div class="service-card" data-aos="fade-up">
-                  <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt=""/></div>
-                  <div class="service-card__body"> 
-                    <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="service-card__button" href="service.html"> 
-                      <svg class="service-card__arrow" viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#000000">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                              <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]"></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></a>
-                  </div>
-                </div>
-                <div class="service-card" data-aos="fade-up">
-                  <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt=""/></div>
-                  <div class="service-card__body"> 
-                    <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="service-card__button" href="service.html"> 
-                      <svg class="service-card__arrow" viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#000000">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                              <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]"></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></a>
-                  </div>
-                </div>
-                <div class="service-card" data-aos="fade-up">
-                  <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt=""/></div>
-                  <div class="service-card__body"> 
-                    <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="service-card__button" href="service.html"> 
-                      <svg class="service-card__arrow" viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#000000">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                              <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]"></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="banner">
-          <div class="banner__img parallax"></div>
-          <div class="banner__inner">
-            <div class="banner__logo"><img src="images/logo-yelow.png" alt="logo"/></div>
-            <div class="banner__text">Качество, сервис и надежность — это основные факторы, которым «Big Grain» придает особое значение!</div>
-            <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
-          </div>
-        </section>
-        <section class="qualities mt-section">
-          <div class="container">
-            <div class="qualities__inner">
-              <div class="qualities__card" data-aos="fade-up">
-                <div class="qualities__img"><img src="images/3-min.JPG" alt=""/><img class="qualities__decor" src="images/logo-yelow.png" alt="logo"/></div>
-                <div class="qualities__box">
-                  <h3 class="qualities__title">           Надежность — это неотъемлемая черта «Big Grain».</h3>
-                  <p class="qualities__text">
-                    Зарекомендовав себя, мы укрепили доверие клиентов и
-                    сельхозпроизводителей. Способность выполнять свои
-                    обязательства и сохранять долгосрочные отношения с партнерами
-                    делает нашу компанию приоритетной на рынке
-                    сельскохозяйственных продуктов.
-                  </p>
-                </div>
-              </div>
-              <div class="qualities__card" data-aos="fade-up">
-                <div class="qualities__img"><img src="images/3-min.JPG" alt=""/><img class="qualities__decor" src="images/logo-yelow.png" alt="logo"/></div>
-                <div class="qualities__box">
-                  <h3 class="qualities__title">           Надежность — это неотъемлемая черта «Big Grain».</h3>
-                  <p class="qualities__text">
-                    Зарекомендовав себя, мы укрепили доверие клиентов и
-                    сельхозпроизводителей. Способность выполнять свои
-                    обязательства и сохранять долгосрочные отношения с партнерами
-                    делает нашу компанию приоритетной на рынке
-                    сельскохозяйственных продуктов.
-                  </p>
-                </div>
-              </div>
-              <div class="qualities__card" data-aos="fade-up">
-                <div class="qualities__img"><img src="images/3-min.JPG" alt=""/><img class="qualities__decor" src="images/logo-yelow.png" alt="logo"/></div>
-                <div class="qualities__box">
-                  <h3 class="qualities__title">           Надежность — это неотъемлемая черта «Big Grain».</h3>
-                  <p class="qualities__text">
-                    Зарекомендовав себя, мы укрепили доверие клиентов и
-                    сельхозпроизводителей. Способность выполнять свои
-                    обязательства и сохранять долгосрочные отношения с партнерами
-                    делает нашу компанию приоритетной на рынке
-                    сельскохозяйственных продуктов.
-                  </p>
-                </div>
-              </div>
-              <div class="qualities__card" data-aos="fade-up">
-                <div class="qualities__img"><img src="images/3-min.JPG" alt=""/><img class="qualities__decor" src="images/logo-yelow.png" alt="logo"/></div>
-                <div class="qualities__box">
-                  <h3 class="qualities__title">           Надежность — это неотъемлемая черта «Big Grain».</h3>
-                  <p class="qualities__text">
-                    Зарекомендовав себя, мы укрепили доверие клиентов и
-                    сельхозпроизводителей. Способность выполнять свои
-                    обязательства и сохранять долгосрочные отношения с партнерами
-                    делает нашу компанию приоритетной на рынке
-                    сельскохозяйственных продуктов.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section-swiper mt-section">
-          <div class="section-swiper__inner">
-            <div class="swiper" data-swiper="bottom">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/1-min.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/2-min.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/3-min2.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/4-min.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/5-min.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/6-min.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/7-min.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/8-min.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/9-min.JPG" alt=""/></div>
-                <div class="swiper-slide"><img src="images/10-min.JPG" alt=""/></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="button-go-top"><a class="go-top" href="#" title=""><i class="fa fa-chevron-up"></i></a></div>
-      </main>
-      <footer class="footer">
-        <div class="footer__inner">
-          <div class="footer__col"><img class="footer__logo" src="images/logo-1-new.png" alt="logo">
-            <p class="footer__text">© 2023 "Big Grain"</p>
-          </div>
-          <div class="footer__col"></div>
-          <div class="footer__col footer__links">
-            <p class="footer__link" data-aos="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д. 11, офис 411</p><a class="footer__link" href="tel:89202277757" data-aos="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link" href="mailto:biggrain.buh@mail.ru" data-aos="fade-left"><span>Электронная почта:</span>  Biggrain.buh@mail.ru</a>
-          </div>
-        </div>
-        <div class="footer-bottom" data-aos="fade-up"> 
-          <div class="footer-bottom__inner">
-            <p class="footer-bottom__text">Оставьте заявку и наш менеджер перезвонит вам</p>
-            <div class="button-footer">
-              <button class="btn btn_yellow">Оставить заявку</button>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  </body>
+    <div class="preloader">
+      <div class="clear-loading loading-effect-2"><span></span></div>
+    </div>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__col"><a class="header__logo" href="pages/index/index.html">
+            <div class="header__logo-inner"><img src="images/logo.png" alt="logo"></div>
+          </a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link">Каталог</a></li>
+              <li class="navigation__item"><a class="navigation__link">Портфолио</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="pages/gallery/index.html">Галерея</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="pages/contact/index.html"> Контакты</a>
+              </li>
+            </ul>
+            <div class="navigation__bottom">
+              <p class="footer__link" data-a="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д.
+                11, офис 411</p><a class="footer__link" href="tel:89202277757"
+                data-a="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link"
+                href="mailto:biggrain.buh@mail.ru" data-a="fade-left"><span>Электронная
+                  почта:</span>  Biggrain.buh@mail.ru</a>
+            </div>
+          </nav>
+        </div>
+        <div class="header__col">
+          <div class="header__connection">
+            <p class="header__phone">Связаться с нами</p><img class="header__phone-img" src="images/phone.svg"
+              alt="phone">
+          </div>
+        </div>
+        <div class="header__burger"></div>
+      </div>
+    </header>
+    <main>
+      <div class="slider preview">
+        <div class="swiper preview-slider" data-swiper="top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide preview__slide">
+              <div class="preview__block">
+                <h2 class="preview__title slider-active"> Выгодные договорные цены и качественная продукция.</h2>
+              </div><img class="preview__img" src="images/st-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide preview__slide">
+              <div class="preview__block">
+                <h2 class="preview__title">Четкое исполнение договоренностей.</h2>
+              </div><img class="preview__img" src="images/st-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide preview__slide">
+              <div class="preview__block">
+                <h2 class="preview__title">Контроль на всех этапах.</h2>
+              </div><img class="preview__img" src="images/st-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide preview__slide">
+              <div class="preview__block">
+                <h2 class="preview__title">Порядок с документами.</h2>
+              </div><img class="preview__img" src="images/st-4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section-about">
+        <div class="container">
+          <div class="section-about__inner">
+            <h2 class="section-about__title" data-aos="fade-up">Компания "Big Grain" — это надежный партнер на рынке
+              экспорта сельскохозяйственной продукции.</h2>
+            <div class="section-about__video" data-aos="fade-up">
+              <video id="video" src="video-1.mp4" playsinline="playsinline"></video>
+              <button class="section-about__button">
+                <svg class="bi bi-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner__img parallax"></div>
+        <div class="banner__inner">
+          <div class="banner__logo"><img src="images/logo-yelow.png" alt="logo" /></div>
+          <div class="banner__text">Установление долгосрочных партнерских отношений с сельхозпроизводителями в России и
+            странах СНГ является важной составляющей работы, что свидетельствует о нашей надежности и профессионализме.
+          </div>
+          <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
+        </div>
+      </section>
+      <section class="direction mt-section">
+        <div class="container">
+          <div class="direction__inner">
+            <div class="direction__left" data-aos="fade-up">
+              <div class="direction__img"><img class="direction__img_1" src="images/about.jpg" alt="" /></div>
+            </div>
+            <div class="direction__right" data-aos="fade-up">
+              <div class="direction__row">
+                <h2 class="direction__title">Основными направлениями нашей деятельности являются продажа:</h2>
+                <ul class="direction__list">
+                  <li data-aos="fade-right">- Масличной и мелкосемянной культуры</li>
+                  <li data-aos="fade-right">- Зернобытовой и бобовой культуры</li>
+                  <li data-aos="fade-right">- Круп</li>
+                  <li data-aos="fade-right">- Зернобытовой и бобовой культуры</li>
+                </ul>
+              </div>
+              <button class="btn btn_green direction__button">Смотреть нашу продукцию</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service mt-section" data-aos="fade-up">
+        <div class="container">
+          <div class="service__inner">
+            <h2 class="service__title">Приглашаем вас ознакомиться с предложением нашей компании для дальнейшего
+              сотрудничества!</h2>
+            <div class="service__box">
+              <div class="service-card" data-aos="fade-up">
+                <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt="" /></div>
+                <div class="service-card__body">
+                  <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="service-card__button"
+                    href="service.html">
+                    <svg class="service-card__arrow" viewBox="-4.5 0 20 20" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <defs></defs>
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#000000">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path
+                              d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                              id="arrow_right-[#336]"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="service-card" data-aos="fade-up">
+                <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt="" /></div>
+                <div class="service-card__body">
+                  <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="service-card__button"
+                    href="service.html">
+                    <svg class="service-card__arrow" viewBox="-4.5 0 20 20" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <defs></defs>
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#000000">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path
+                              d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                              id="arrow_right-[#336]"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="service-card" data-aos="fade-up">
+                <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt="" /></div>
+                <div class="service-card__body">
+                  <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="service-card__button"
+                    href="service.html">
+                    <svg class="service-card__arrow" viewBox="-4.5 0 20 20" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <defs></defs>
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#000000">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path
+                              d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                              id="arrow_right-[#336]"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="service-card" data-aos="fade-up">
+                <div class="service-card__img"> <img class="service-img" src="images/card-1.JPG" alt="" /></div>
+                <div class="service-card__body">
+                  <h4 class="service-card__title">Масличные и мелкосемянные культуры</h4><a class="service-card__button"
+                    href="service.html">
+                    <svg class="service-card__arrow" viewBox="-4.5 0 20 20" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <defs></defs>
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#000000">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path
+                              d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                              id="arrow_right-[#336]"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner__img parallax"></div>
+        <div class="banner__inner">
+          <div class="banner__logo"><img src="images/logo-yelow.png" alt="logo" /></div>
+          <div class="banner__text">Качество, сервис и надежность — это основные факторы, которым «Big Grain» придает
+            особое значение!</div>
+          <button class="btn btn_yellow banner__button">Узнать о нас больше</button>
+        </div>
+      </section>
+      <section class="qualities mt-section">
+        <div class="container">
+          <div class="qualities__inner">
+            <div class="qualities__card" data-aos="fade-up">
+              <div class="qualities__img"><img src="images/3-min.JPG" alt="" /><img class="qualities__decor"
+                  src="images/logo-yelow.png" alt="logo" /></div>
+              <div class="qualities__box">
+                <h3 class="qualities__title"> Надежность — это неотъемлемая черта «Big Grain».</h3>
+                <p class="qualities__text">
+                  Зарекомендовав себя, мы укрепили доверие клиентов и
+                  сельхозпроизводителей. Способность выполнять свои
+                  обязательства и сохранять долгосрочные отношения с партнерами
+                  делает нашу компанию приоритетной на рынке
+                  сельскохозяйственных продуктов.
+                </p>
+              </div>
+            </div>
+            <div class="qualities__card" data-aos="fade-up">
+              <div class="qualities__img"><img src="images/3-min.JPG" alt="" /><img class="qualities__decor"
+                  src="images/logo-yelow.png" alt="logo" /></div>
+              <div class="qualities__box">
+                <h3 class="qualities__title"> Надежность — это неотъемлемая черта «Big Grain».</h3>
+                <p class="qualities__text">
+                  Зарекомендовав себя, мы укрепили доверие клиентов и
+                  сельхозпроизводителей. Способность выполнять свои
+                  обязательства и сохранять долгосрочные отношения с партнерами
+                  делает нашу компанию приоритетной на рынке
+                  сельскохозяйственных продуктов.
+                </p>
+              </div>
+            </div>
+            <div class="qualities__card" data-aos="fade-up">
+              <div class="qualities__img"><img src="images/3-min.JPG" alt="" /><img class="qualities__decor"
+                  src="images/logo-yelow.png" alt="logo" /></div>
+              <div class="qualities__box">
+                <h3 class="qualities__title"> Надежность — это неотъемлемая черта «Big Grain».</h3>
+                <p class="qualities__text">
+                  Зарекомендовав себя, мы укрепили доверие клиентов и
+                  сельхозпроизводителей. Способность выполнять свои
+                  обязательства и сохранять долгосрочные отношения с партнерами
+                  делает нашу компанию приоритетной на рынке
+                  сельскохозяйственных продуктов.
+                </p>
+              </div>
+            </div>
+            <div class="qualities__card" data-aos="fade-up">
+              <div class="qualities__img"><img src="images/3-min.JPG" alt="" /><img class="qualities__decor"
+                  src="images/logo-yelow.png" alt="logo" /></div>
+              <div class="qualities__box">
+                <h3 class="qualities__title"> Надежность — это неотъемлемая черта «Big Grain».</h3>
+                <p class="qualities__text">
+                  Зарекомендовав себя, мы укрепили доверие клиентов и
+                  сельхозпроизводителей. Способность выполнять свои
+                  обязательства и сохранять долгосрочные отношения с партнерами
+                  делает нашу компанию приоритетной на рынке
+                  сельскохозяйственных продуктов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-swiper mt-section">
+        <div class="section-swiper__inner">
+          <div class="swiper" data-swiper="bottom">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/1-min.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/2-min.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/3-min2.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/4-min.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/5-min.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/6-min.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/7-min.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/8-min.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/9-min.JPG" alt="" /></div>
+              <div class="swiper-slide"><img src="images/10-min.JPG" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="button-go-top"><a class="go-top" href="#" title=""><i class="fa fa-chevron-up"></i></a></div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__col"><img class="footer__logo" src="images/logo-1-new.png" alt="logo">
+          <p class="footer__text">© 2023 "Big Grain"</p>
+        </div>
+        <div class="footer__col"></div>
+        <div class="footer__col footer__links">
+          <p class="footer__link" data-aos="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д.
+            11, офис 411</p><a class="footer__link" href="tel:89202277757"
+            data-aos="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link"
+            href="mailto:biggrain.buh@mail.ru" data-aos="fade-left"><span>Электронная
+              почта:</span>  Biggrain.buh@mail.ru</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-aos="fade-up">
+        <div class="footer-bottom__inner">
+          <p class="footer-bottom__text">Оставьте заявку и наш менеджер перезвонит вам</p>
+          <div class="button-footer">
+            <button class="btn btn_yellow">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+
 </html>
