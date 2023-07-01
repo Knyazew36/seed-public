@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>contact</title>
+    <meta content="width=device-width, initial-scale=1  maximum-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&amp;display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="assets/index-01f76a43.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body style{ opacity:0 }>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="clear-loading loading-effect-2"><span></span></div>
+      </div>
+      <div class="my-modal">
+        <div class="overlay"></div>
+        <div class="my-modal__inner">
+          <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
+          <h3 class="my-modal__title">Оставить заявку</h3>
+          <div class="contact__form my-modal__form"> 
+            <form class="contact-form" action="#">
+              <div class="contact-form__input">
+                <input type="text" placeholder="Имя" required="required"/>
+              </div>
+              <div class="contact-from-input">
+                <input type="text" placeholder="Фамилия"/>
+              </div>
+              <div class="contact-from-input">
+                <input type="text" placeholder="Телефонный номер" required="required" data-mask-phone="data-mask-phone"/>
+              </div>
+              <textarea name="comment" placeholder="Комментарий"></textarea>
+              <button class="btn btn_yellow contact__button contact-form__button">Связаться с нами</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="go-top">
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow / Arrow_Up_SM">
+            <path id="Vector" d="M12 17V7M12 7L8 11M12 7L16 11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__col"><a class="header__logo" href="./index.html">
+              <div class="header__logo-inner"><img src="images/logo.png" alt="logo"></div></a>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link">Каталог</a></li>
+                <li class="navigation__item"><a class="navigation__link">Портфолио</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="./gallery.html">Галерея</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="./contact.html"> Контакты</a></li>
+              </ul>
+              <div class="navigation__bottom"> 
+                <p class="footer__link" data-a="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д. 11, офис 411</p><a class="footer__link" href="tel:89202277757" data-a="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link" href="mailto:biggrain.buh@mail.ru" data-a="fade-left"><span>Электронная почта:</span>  Biggrain.buh@mail.ru</a>
+              </div>
+            </nav>
+          </div>
+          <div class="header__col">
+            <div class="header__connection">
+              <p class="header__phone">Связаться с нами</p><img class="header__phone-img" src="images/phone.svg" alt="phone">
+            </div>
+          </div>
+          <div class="header__burger"></div>
+        </div>
+      </header>
+      <main>
+        <section class="contact"> 
+          <div class="contact__inner"> 
+            <div class="preview-page__preview parallax"><img src="images/slide-2.jpg" alt=""/>
+              <div class="preview-page__titlebox">
+                <h1 class="preview-page__title">Контакты</h1>
+                <div class="breadcrumb"> <a class="breadcrumb__link breadcrumb__homie" href="./index.html">Главная</a><span>></span>
+                  <div class="breadcrumb__link breadcrumb__target">Контакты</div>
+                </div>
+              </div>
+            </div>
+            <div class="contact__map">
+              <div class="contact__map-body">
+                <div class="contact__map-overlay"><img class="contact__map-tap" src="images/tap.svg" alt=""/></div>
+                <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A298b118c05514fa7cf3d448d37f9574217fd1486cc8927396840209148ac2cee&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+              </div>
+            </div>
+            <div class="container"> 
+              <div class="contact__block"> 
+                <div class="contact__form"> 
+                  <form class="contact-form" action="#">
+                    <div class="contact-form__input">
+                      <input type="text" placeholder="Имя" required="required"/>
+                    </div>
+                    <div class="contact-from-input">
+                      <input type="text" placeholder="Фамилия"/>
+                    </div>
+                    <div class="contact-from-input">
+                      <input type="text" placeholder="Телефонный номер" required="required" data-mask-phone="data-mask-phone"/>
+                    </div>
+                    <textarea name="comment" placeholder="Комментарий"></textarea>
+                    <button class="btn btn_yellow contact__button contact-form__button">Связаться с нами</button>
+                  </form>
+                </div>
+                <div class="contact__bottom">
+                  <h3 class="contact__subtitle">Юридическая информация:</h3>
+                  <div class="contact__row">
+                    <p class="contact__text-info" data-aos="fade-left"><span>ИНН</span>88005553535</p>
+                    <p class="contact__text-info" data-aos="fade-left"><span>ИНН</span>88005553535</p>
+                    <p class="contact__text-info" data-aos="fade-left"> <span>ЮР имя</span>88005553535</p>
+                    <p class="contact__text-info" data-aos="fade-left"> <span>Сайт РФ</span>88005553535</p>
+                    <p class="contact__text-info" data-aos="fade-left"> <span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д. 11, офис 411</p>
+                    <p class="contact__text-info" data-aos="fade-left"> <span>Телефон:</span>  8-920-227-77-57</p>
+                    <p class="contact__text-info" data-aos="fade-left"> <span>Электронная почта:</span>Biggrain.buh@mail.ru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer mt-section">
+        <div class="footer__inner">
+          <div class="footer__col"><img class="footer__logo" src="images/logo-1-new.png" alt="logo">
+            <p class="footer__text">© 2023 "Big Grain"</p>
+          </div>
+          <div class="footer__col"></div>
+          <div class="footer__col footer__links">
+            <p class="footer__link" data-aos="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д. 11, офис 411</p><a class="footer__link" href="tel:89202277757" data-aos="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link" href="mailto:biggrain.buh@mail.ru" data-aos="fade-left"><span>Электронная почта:</span>  Biggrain.buh@mail.ru</a>
+          </div>
+        </div>
+        <div class="footer-bottom" data-aos="fade-up"> 
+          <div class="footer-bottom__inner">
+            <p class="footer-bottom__text">Оставьте заявку и наш менеджер перезвонит вам</p>
+            <div class="button-footer">
+              <button class="btn btn_yellow">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
+</html>
