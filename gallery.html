@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>gallery</title>
+    <meta content="width=device-width, initial-scale=1  maximum-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script type="module" crossorigin src="assets/index-ef1fbc2d.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body style{ opacity:0 }>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="clear-loading loading-effect-2"><span></span></div>
+      </div>
+      <div class="my-modal">
+        <div class="overlay"></div>
+        <div class="my-modal__inner">
+          <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
+          <div class="my-modal__body">
+            <h3 class="my-modal__title">Оставить заявку</h3>
+            <div class="contact__form my-modal__form"> 
+              <form class="contact-form" action="#">
+                <div class="contact-form__input">
+                  <div class="input-wrapper" data-input-parent="">
+                    <div class="input-wrapper__placeholder">Имя</div>
+                    <input class="input" data-input="" required="required" placeholder="Имя"/>
+                  </div>
+                </div>
+                <div class="contact-from-input">
+                  <div class="input-wrapper" data-input-parent="">
+                    <div class="input-wrapper__placeholder">Телефонный номер</div>
+                    <input class="input" data-input="" required="required" placeholder="Телефонный номер" data-mask-phone="data-mask-phone"/>
+                  </div>
+                </div>
+                <div class="input-wrapper" data-input-parent="">
+                  <div class="input-wrapper__placeholder">Комментарий</div>
+                  <textarea class="textarea" data-input="" placeholder="Комментарий"></textarea>
+                </div>
+                <p class="contact-form__text">Нажимая кнопку "связаться с нами", я даю согласие на передачу и  обработку персональных данных, а также подтверждаю, что ознакомлен с Политикой конфеденциальности.</p>
+                <button class="btn btn_yellow contact__button modal-response contact-form__button">Связаться с нами</button>
+              </form>
+            </div>
+          </div>
+          <div class="my-modal__response">
+            <p class="my-modal__response-text">Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время!</p>
+          </div>
+        </div>
+      </div>
+      <div class="go-top">
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow / Arrow_Up_SM">
+            <path id="Vector" d="M12 17V7M12 7L8 11M12 7L16 11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__col"><a class="header__logo" href="./index.html">
+              <div class="header__logo-inner"><img src="images/logo-white.png" alt="logo"></div></a>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="./catalog.html">Каталог</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="./gallery.html">Галерея</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="./contact.html"> Контакты</a></li>
+              </ul>
+              <div class="navigation__bottom"> 
+                <p class="footer__link" data-a="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д. 11, офис 411</p><a class="footer__link" href="tel:89202277757" data-a="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link" href="mailto:biggrain.buh@mail.ru" data-a="fade-left"><span>Электронная почта:</span>  Biggrain.buh@mail.ru</a>
+              </div>
+            </nav>
+          </div>
+          <div class="header__col">
+            <div class="language">
+              <p class="language__text">RU </p>
+              <div class="language__options"> <a class="language__option" href="#"> EN</a><a class="language__option" href="#"> CN</a></div>
+            </div>
+            <div class="header__connection modal-on">
+              <p class="header__phone">Связаться с нами</p><img class="header__phone-img" src="images/phone.svg" alt="phone">
+            </div>
+            <div class="header__burger"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="preview-page__preview background-element">
+          <div class="preview-page__titlebox">
+            <h1 class="preview-page__title">Галерея</h1>
+            <div class="breadcrumb"> <a class="breadcrumb__link breadcrumb__homie" href="./index.html">Главная</a><span>></span>
+              <div class="breadcrumb__link breadcrumb__target">Галерея</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-block">
+          <div class="container"> 
+            <div class="gallery-block__box">
+              <div class="gallery-block__images"><a class="gallery-block__img fancybox" data-fancybox="gallery" href="./images/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="./images/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="./images/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="./images/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a><a class="gallery-block__img fancybox" data-fancybox="gallery" href="./images/slide-2.jpg"><img src="images/slide-2.jpg" alt=""/></a></div>
+              <button class="btn btn_yellow gallery-block__btn">Еще фото</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer mt-section">
+        <div class="footer__inner">
+          <div class="footer__col"><img class="footer__logo" src="images/logo-1-new.png" alt="logo">
+            <p class="footer__text">© 2023 "Big Grain" Все права защищены</p><a class="footer__politic">Политика конфеденциальности</a>
+          </div>
+          <div class="footer__col"></div>
+          <div class="footer__col footer__links">
+            <p class="footer__link" data-aos="fade-left"><span>Адрес:</span>  394030, г. Воронеж, Бакунский переулок, д. 11, офис 411</p><a class="footer__link" href="tel:89202277757" data-aos="fade-left"><span>Телефон:</span>  8-920-227-77-57</a><a class="footer__link" href="mailto:biggrain.buh@mail.ru" data-aos="fade-left"><span>Электронная почта:</span>  Biggrain.buh@mail.ru</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom__inner">
+            <p class="footer-bottom__text">Оставьте заявку и наш менеджер перезвонит вам</p>
+            <div class="button-footer">
+              <button class="btn btn_yellow modal-on">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
+</html>
