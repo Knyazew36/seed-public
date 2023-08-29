@@ -6,7 +6,6 @@
     <meta content="width=device-width, initial-scale=1  maximum-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta name="description" content="Официальный сайт компании BigGrain, предлагающий товары высокого качества.">
-    <!--FIXME:-->
     <meta property="og:title" content="BigGrain">
     <meta property="og:description" content="Компания, являющаяся крупнейшим игроком на рынке экспорта сельскохозяйственной продукции">
     <meta property="og:image" content="/opengraph.jpg">
@@ -23,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="assets/index-1dd360cd.js"></script>
+    <script type="module" crossorigin src="assets/index-ffa7d74e.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -34,7 +33,7 @@
       <div class="my-modal">
         <div class="overlay"></div>
         <div class="my-modal__inner">
-          <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
+          <button class="btn-close" type="button my-modal__close" name="close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
           <div class="my-modal__body">
             <h3 class="my-modal__title">Оставить заявку</h3>
             <div class="contact__form my-modal__form"> 
@@ -56,7 +55,7 @@
                   <textarea class="textarea" data-input="" placeholder="Комментарий"></textarea>
                 </div>
                 <p class="contact-form__text">Нажимая кнопку "связаться с нами", я даю согласие на передачу и  обработку персональных данных, а также подтверждаю, что ознакомлен с Политикой конфеденциальности.</p>
-                <button class="btn btn_yellow contact__button modal-response contact-form__button">Связаться с нами</button>
+                <button class="btn btn_yellow contact__button modal-response contact-form__button" name="Связаться с нами">Связаться с нами</button>
               </form>
             </div>
           </div>
@@ -74,7 +73,7 @@
       </div>
       <div class="modal-dev">
         <div class="modal-dev__inner"> 
-          <button class="btn-close" type="button my-modal__close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
+          <button class="btn-close" type="button my-modal__close" name="close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
           <p class="modal-dev__text">В настоящее время сайт работает в тестовом режиме</p>
         </div>
       </div>
@@ -112,14 +111,14 @@
         </div>
       </header>
       <main>
-        <div class="preview-page__preview background-element preview-page_catalog">
+        <section class="preview-page__preview background-element preview-page_catalog">
           <div class="preview-page__titlebox">
             <div class="breadcrumb"> <a class="breadcrumb__link breadcrumb__homie" href="./index.html">Главная</a><span>/</span>
               <div class="breadcrumb__link breadcrumb__target">Каталог</div>
             </div>
             <h1 class="preview-page__title">Каталог</h1>
           </div>
-        </div>
+        </section>
         <div class="catalog"> 
           <div class="container">
             <div class="catalog__inner"> 
@@ -130,7 +129,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/legumes-1.webp 1x"/><img class="picture__img" src="images/legumes-1.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/legumes-1.webp 1x" alt="legumes-1.jpg"/><img class="picture__img lazyload" data-src="images/legumes-1.jpg" alt="legumes-1.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -138,91 +137,151 @@
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/legumes-2.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/legumes-2.webp 1x" alt="legumes-2.jpg"/><img class="picture__img lazyload" data-src="images/legumes-2.jpg" alt="legumes-2.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица красная шлифованная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC08957.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC08957.webp 1x" alt="DSC08957.jpg"/><img class="picture__img lazyload" data-src="images/DSC08957.jpg" alt="DSC08957.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица красная колотая шлифованная рафинированная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC08968.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC08968.webp 1x" alt="DSC08968.jpg"/><img class="picture__img lazyload" data-src="images/DSC08968.jpg" alt="DSC08968.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица красная колотая шлифованная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC08971.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC08971.webp 1x" alt="DSC08971.jpg"/><img class="picture__img lazyload" data-src="images/DSC08971.jpg" alt="DSC08971.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица красная измельченная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09012.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09012.webp 1x" alt="DSC09012.jpg"/><img class="picture__img lazyload" data-src="images/DSC09012.jpg" alt="DSC09012.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица желтая шлифованная рафинированная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09031.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09031.webp 1x" alt="DSC09031.jpg"/><img class="picture__img lazyload" data-src="images/DSC09031.jpg" alt="DSC09031.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица желтая шлифованная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09050.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09050.webp 1x" alt="DSC09050.jpg"/><img class="picture__img lazyload" data-src="images/DSC09050.jpg" alt="DSC09050.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица желтая колотая шлифованная рафинированная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09052.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09052.webp 1x" alt="DSC09052.jpg"/><img class="picture__img lazyload" data-src="images/DSC09052.jpg" alt="DSC09052.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица желтая колотая шлифованная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09070.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09070.webp 1x" alt="DSC09070.jpg"/><img class="picture__img lazyload" data-src="images/DSC09070.jpg" alt="DSC09070.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица желтая измельченная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09089.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09089.webp 1x" alt="DSC09089.jpg"/><img class="picture__img lazyload" data-src="images/DSC09089.jpg" alt="DSC09089.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Смесь чечевицы красной и желтой шлифованная рафинированная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09127.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09127.webp 1x" alt="DSC09127.jpg"/><img class="picture__img lazyload" data-src="images/DSC09127.jpg" alt="DSC09127.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Смесь чечевицы красной и желтой колотая</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09126.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09126.webp 1x" alt="DSC09126.jpg"/><img class="picture__img lazyload" data-src="images/DSC09126.jpg" alt="DSC09126.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Смесь чечевицы красной и желтой измельченная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09140.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09140.webp 1x" alt="DSC09140.jpg"/><img class="picture__img lazyload" data-src="images/DSC09140.jpg" alt="DSC09140.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица зеленая</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09155-2.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09155-2.webp 1x" alt="DSC09155-2.jpg"/><img class="picture__img lazyload" data-src="images/DSC09155-2.jpg" alt="DSC09155-2.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Чечевица коричневая</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09164.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09164.webp 1x" alt="DSC09164.jpg"/><img class="picture__img lazyload" data-src="images/DSC09164.jpg" alt="DSC09164.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Нут</h4>
                       </div>
@@ -230,7 +289,7 @@
                   </div>
                 </div>
                 <div class="catalog__btn">
-                  <button class="btn btn_yellow modal-on">Узнать о наличии товара</button>
+                  <button class="btn btn_yellow modal-on" name="Узнать о наличии товара">Узнать о наличии товара</button>
                 </div>
               </section>
               <section class="catalog__section" data-aos="fade-up" id="legumes">
@@ -238,61 +297,99 @@
                 <div class="catalog__box">
                   <div class="catalog__item">
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09182.JPG" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09182.webp 1x" alt="DSC09182.JPG"/><img class="picture__img lazyload" data-src="images/DSC09182.JPG" alt="DSC09182.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Горчица белая</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09190-2.JPG" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09190-2.webp 1x" alt="DSC09190-2.JPG"/><img class="picture__img lazyload" data-src="images/DSC09190-2.JPG" alt="DSC09190-2.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Горчица желтая</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09207.JPG" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09207.webp 1x" alt="DSC09207.JPG"/><img class="picture__img lazyload" data-src="images/DSC09207.JPG" alt="DSC09207.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Горчица черная</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09214-2.JPG" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09214-2.webp 1x" alt="DSC09214-2.JPG"/><img class="picture__img lazyload" data-src="images/DSC09214-2.JPG" alt="DSC09214-2.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Лен белый (золотой)</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09226.JPG" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09226.webp 1x" alt="DSC09226.JPG"/><img class="picture__img lazyload" data-src="images/DSC09226.JPG" alt="DSC09226.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Лен коричневый</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09237.JPG" alt=""/></div>
+                      <div class="catalog-card__img"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09237.webp 1x" alt="DSC09237.JPG"/><img class="picture__img lazyload" data-src="images/DSC09237.JPG" alt="DSC09237.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Расторопша</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09258.JPG" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09258.webp 1x" alt="DSC09258.JPG"/><img class="picture__img lazyload" data-src="images/DSC09258.JPG" alt="DSC09258.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Кориандр</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/istockphoto-477345277-1024x1024.jpg" alt=""/></div>
+                      <div class="catalog-card__img"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/istockphoto-477345277-1024x1024.webp 1x" alt="istockphoto-477345277-1024x1024.jpg"/><img class="picture__img lazyload" data-src="images/istockphoto-477345277-1024x1024.jpg" alt="istockphoto-477345277-1024x1024.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Подсолнечник</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09247.JPG" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09247.webp 1x" alt="DSC09247.JPG"/><img class="picture__img lazyload" data-src="images/DSC09247.JPG" alt="DSC09247.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Сафлор</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> </div>
+                      <div class="catalog-card__img"> 
+                        <!--TODO:-->
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Редька масличная</h4>
                       </div>
@@ -300,7 +397,7 @@
                   </div>
                 </div>
                 <div class="catalog__btn">
-                  <button class="btn btn_yellow modal-on">Узнать о наличии товара</button>
+                  <button class="btn btn_yellow modal-on" name="Узнать о наличии товара">Узнать о наличии товара</button>
                 </div>
               </section>
               <section class="catalog__section" data-aos="fade-up" id="cereals">
@@ -310,7 +407,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/IMG_6528.webp 1x"/><img class="picture__img" src="images/IMG_6528.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/IMG_6528.webp 1x" alt="IMG_6528.jpg"/><img class="picture__img lazyload" data-src="images/IMG_6528.jpg" alt="IMG_6528.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -320,7 +417,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/photo1692967066.webp 1x"/><img class="picture__img" src="images/photo1692967066.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/photo1692967066.webp 1x" alt="photo1692967066.jpg"/><img class="picture__img lazyload" data-src="images/photo1692967066.jpg" alt="photo1692967066.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -330,7 +427,7 @@
                   </div>
                 </div>
                 <div class="catalog__btn">
-                  <button class="btn btn_yellow modal-on">Узнать о наличии товара</button>
+                  <button class="btn btn_yellow modal-on" name="Узнать о наличии товара">Узнать о наличии товара</button>
                 </div>
               </section>
               <section class="catalog__section" data-aos="fade-up" id="fas">
@@ -340,7 +437,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/DSC09038.webp 1x"/><img class="picture__img" src="images/DSC09038.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09038.webp 1x" alt="DSC09038.jpg"/><img class="picture__img lazyload" data-src="images/DSC09038.jpg" alt="DSC09038.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -350,7 +447,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/DSC09081.webp 1x"/><img class="picture__img" src="images/DSC09081.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09081.webp 1x" alt="DSC09081.jpg"/><img class="picture__img lazyload" data-src="images/DSC09081.jpg" alt="DSC09081.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -360,7 +457,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/DSC09058.webp 1x"/><img class="picture__img" src="images/DSC09058.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09058.webp 1x" alt="DSC09058.jpg"/><img class="picture__img lazyload" data-src="images/DSC09058.jpg" alt="DSC09058.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -370,7 +467,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/DSC09061.webp 1x"/><img class="picture__img" src="images/DSC09061.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09061.webp 1x" alt="DSC09061.jpg"/><img class="picture__img lazyload" data-src="images/DSC09061.jpg" alt="DSC09061.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -380,7 +477,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/ksr.webp 1x"/><img class="picture__img" src="images/ksr.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/ksr.webp 1x" alt="ksr.jpg"/><img class="picture__img lazyload" data-src="images/ksr.jpg" alt="ksr.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -390,7 +487,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/kks.webp 1x"/><img class="picture__img" src="images/kks.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/kks.webp 1x" alt="kks.jpg"/><img class="picture__img lazyload" data-src="images/kks.jpg" alt="kks.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -400,7 +497,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/DSC09109.webp 1x"/><img class="picture__img" src="images/DSC09109.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09109.webp 1x" alt="DSC09109.jpg"/><img class="picture__img lazyload" data-src="images/DSC09109.jpg" alt="DSC09109.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -410,7 +507,7 @@
                   </div>
                 </div>
                 <div class="catalog__btn">
-                  <button class="btn btn_yellow modal-on">Узнать о наличии товара</button>
+                  <button class="btn btn_yellow modal-on" name="Узнать о наличии товара">Узнать о наличии товара</button>
                 </div>
               </section>
               <section class="catalog__section" data-aos="fade-up" id="oil">
@@ -420,7 +517,7 @@
                     <div class="catalog-card">
                       <div class="catalog-card__img"> 
                         <picture class="picture">
-                          <source type="image/webp" srcset="webp/close-up-water-rings-on-a-yellow-pool-surface.webp 1x"/><img class="picture__img" src="images/close-up-water-rings-on-a-yellow-pool-surface.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/close-up-water-rings-on-a-yellow-pool-surface.webp 1x" alt="close-up-water-rings-on-a-yellow-pool-surface.jpg"/><img class="picture__img lazyload" data-src="images/close-up-water-rings-on-a-yellow-pool-surface.jpg" alt="close-up-water-rings-on-a-yellow-pool-surface.jpg"/>
                         </picture>
                       </div>
                       <div class="catalog-card__body">
@@ -430,7 +527,7 @@
                   </div>
                 </div>
                 <div class="catalog__btn">
-                  <button class="btn btn_yellow modal-on">Узнать о наличии товара</button>
+                  <button class="btn btn_yellow modal-on" name="Узнать о наличии товара">Узнать о наличии товара</button>
                 </div>
               </section>
               <section class="catalog__section" data-aos="fade-up" id="seed">
@@ -438,25 +535,37 @@
                 <div class="catalog__box">
                   <div class="catalog__item">
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> </div>
+                      <div class="catalog-card__img">
+                        <!--TODO: -->
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Фацелия</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> </div>
+                      <div class="catalog-card__img">
+                        <!--TODO: -->
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Сорго</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/DSC09272.JPG" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/DSC09272.webp 1x" alt="DSC09272.JPG"/><img class="picture__img lazyload" data-src="images/DSC09272.JPG" alt="DSC09272.JPG"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Гречиха</h4>
                       </div>
                     </div>
                     <div class="catalog-card">
-                      <div class="catalog-card__img"> <img class="service-img" src="images/istockphoto-1201606445-1024x1024.jpg" alt=""/></div>
+                      <div class="catalog-card__img">
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/istockphoto-1201606445-1024x1024.webp 1x" alt="istockphoto-1201606445-1024x1024.jpg"/><img class="picture__img lazyload" data-src="images/istockphoto-1201606445-1024x1024.jpg" alt="istockphoto-1201606445-1024x1024.jpg"/>
+                        </picture>
+                      </div>
                       <div class="catalog-card__body">
                         <h4 class="catalog-card__title">Шпрот подсолнечный</h4>
                       </div>
@@ -464,7 +573,7 @@
                   </div>
                 </div>
                 <div class="catalog__btn">
-                  <button class="btn btn_yellow modal-on">Узнать о наличии товара</button>
+                  <button class="btn btn_yellow modal-on" name="Узнать о наличии товара">Узнать о наличии товара</button>
                 </div>
               </section>
             </div>
@@ -478,7 +587,7 @@
               <!--FIXME: вставить свг--><img src="logo-y.svg" alt="">
             </div>
             <div class="footer__col">
-              <p class="footer__text">© 2023 "Big Grain" Все права защищены</p><a class="footer__politic">Политика конфеденциальности</a>
+              <p class="footer__text">© 2023 "Big Grain" Все права защищены</p><a class="footer__politic" href="/PrivacyPolicyStatement.docx">Политика конфеденциальности</a>
               <p class="footer__copirait">Сайт разарботан:&nbsp;<a href="https://t.me/Knyaz_36" target="_blank"> Князев C</a></p>
             </div>
           </div>
@@ -490,7 +599,7 @@
           <div class="footer-bottom__inner">
             <p class="footer-bottom__text">Оставьте заявку и наш менеджер перезвонит вам</p>
             <div class="button-footer">
-              <button class="btn btn_yellow modal-on">Оставить заявку</button>
+              <button class="btn btn_yellow modal-on" name="Оставить заявку">Оставить заявку</button>
             </div>
           </div>
         </div>
