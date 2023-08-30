@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="assets/index-649e96bd.js"></script>
+    <script type="module" crossorigin src="assets/index-3587485c.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -35,9 +35,29 @@
         <div class="my-modal__inner">
           <button class="btn-close" type="button my-modal__close" name="close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
           <div class="my-modal__body">
-            <h3 class="my-modal__title">Сайт находится в тестовом режиме, приносим извинения за неудобства</h3><br/><br/>
-            <h3 class="my-modal__title">Website is under development,so apologies for the lack of information</h3>
-            <!--TODO:-->
+            <h3 class="my-modal__title">Оставить заявку</h3>
+            <div class="contact__form my-modal__form"> 
+              <form class="contact-form" action="#">
+                <div class="contact-form__input">
+                  <div class="input-wrapper" data-input-parent="">
+                    <div class="input-wrapper__placeholder">Имя</div>
+                    <input class="input" data-input="" required="required" placeholder="Имя" name="name"/>
+                  </div>
+                </div>
+                <div class="contact-from-input">
+                  <div class="input-wrapper" data-input-parent="">
+                    <div class="input-wrapper__placeholder">Телефонный номер</div>
+                    <input class="input" data-input="" required="required" placeholder="Телефонный номер" data-mask-phone="data-mask-phone" name="phone"/>
+                  </div>
+                </div>
+                <div class="input-wrapper" data-input-parent="">
+                  <div class="input-wrapper__placeholder">Комментарий</div>
+                  <textarea class="textarea" data-input="" placeholder="Комментарий" name="comment"></textarea>
+                </div>
+                <p class="contact-form__text">Нажимая кнопку "связаться с нами", я даю согласие на передачу и  обработку персональных данных, а также подтверждаю, что ознакомлен с политикой конфеденциальности.</p>
+                <button class="btn btn_yellow contact__button modal-response contact-form__button" name="Связаться с нами">Связаться с нами</button>
+              </form>
+            </div>
           </div>
           <div class="my-modal__response">
             <p class="my-modal__response-text">Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время!</p>
@@ -92,17 +112,11 @@
         </div>
       </header>
       <main>
-        <div class="my-modal response">
-          <div class="overlay"></div>
-          <div class="my-modal__inner">
+        <div class="response"> 
+          <div class="overlay"> </div>
+          <div class="response__inner">
             <button class="btn-close" type="button my-modal__close" name="close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
-            <div class="my-modal__body">
-              <h3 class="my-modal__title">Сайт находится в тестовом режиме, приносим извинения за неудобства</h3><br/><br/>
-              <h3 class="my-modal__title">Website is under development,so apologies for the lack of information</h3>
-            </div>
-            <div class="my-modal__response">
-              <p class="my-modal__response-text">Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время!</p>
-            </div>
+            <p class="response__title">Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время!</p>
           </div>
         </div>
         <section class="preview-page__preview background-element preview-page_contact">
@@ -124,23 +138,23 @@
             <div class="container"> 
               <div class="contact__block"> 
                 <div class="contact__form"> 
-                  <form class="contact-form" action="#">
+                  <form class="contact-form" action="#" id="form-page-contact">
                     <div class="contact-form__input">
                       <div class="input-wrapper" data-input-parent="">
                         <div class="input-wrapper__placeholder">Имя</div>
-                        <input class="input" data-input="" required="required" type="text" placeholder="Имя"/>
+                        <input class="input" data-input="" required="required" type="text" placeholder="Имя" name="name"/>
                       </div>
                     </div>
                     <div class="contact-from-input">
                       <div class="input-wrapper" data-input-parent="">
                         <div class="input-wrapper__placeholder">Фамилия</div>
-                        <input class="input" data-input="" required="required" type="text" placeholder="Фамилия"/>
+                        <input class="input" data-input="" required="required" type="text" placeholder="Фамилия" name="surname"/>
                       </div>
                     </div>
                     <div class="contact-from-input">
                       <div class="input-wrapper" data-input-parent="">
                         <div class="input-wrapper__placeholder">Телефонный номер</div>
-                        <input class="input" data-input="" required="required" type="text" placeholder="Телефонный номер" data-mask-phone="data-mask-phone"/>
+                        <input class="input" data-input="" required="required" type="text" placeholder="Телефонный номер" data-mask-phone="data-mask-phone" name="phone"/>
                       </div>
                     </div>
                     <div class="input-wrapper" data-input-parent="">
