@@ -17,9 +17,6 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&amp;display=swap" rel="stylesheet">
     <script type="module" crossorigin src="assets/index-8980d247.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
@@ -31,7 +28,7 @@
       <div class="my-modal">
         <div class="overlay"></div>
         <div class="my-modal__inner">
-          <button class="btn-close" type="button my-modal__close" name="btn-close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
+          <button class="btn-close" type="button my-modal__close" name="btn-close" aria-label="Close modal window"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
           <div class="my-modal__body">
             <h3 class="my-modal__title">Оставить заявку</h3>
             <div class="contact__form my-modal__form"> 
@@ -74,7 +71,7 @@
           <div class="header__col"><a class="header__logo" href="./index.html">
               <div class="header__logo-inner">
                 <!--FIXME: вставить в код свг--><img class="header-logo" src="logo-y.svg" alt="logo"/>
-              </div></a><a class="header__logo header__logo_2 header-logo-circle" href="./index.html">
+              </div></a><a class="header__logo header__logo_2 header-logo-circle" href="./index.html" aria-label="Главная страница">
               <div class="header__logo-inner"></div></a>
             <nav class="navigation">
               <ul class="navigation__list">
@@ -102,7 +99,6 @@
       <main>
         <div class="modal-dev">
           <div class="modal-dev__inner"> 
-            <button class="btn-close" type="button my-modal__close" name="close"><span class="icon-cross"></span><span class="visually-hidden"></span></button>
             <p class="modal-dev__text">В настоящее время сайт работает в тестовом режиме</p>
             <p class="modal-dev__text">The site is currently in test mode.</p>
           </div>
@@ -152,7 +148,7 @@
               <h2 class="section-about__title" data-aos="fade-up">BIG GRAIN- это надежный партнер не только на внутреннем рынке, но и на рынке экспорта сельскохозяйственной продукции.</h2>
               <div class="section-about__video" data-aos="fade-up">
                 <video id="video" src="video-1.mp4" playsinline="playsinline"></video>
-                <button class="section-about__button" name="play">
+                <button class="section-about__button" name="play" aria-label="play video">
                   <svg class="bi bi-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
                   </svg>

@@ -1,3 +1,2 @@
-
 User-agent: *
-Allow: http://big-grain.com/
+Allow: /
