@@ -1,3 +1,8 @@
 RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTPS/
-RewriteRule ^index\.html$ https://big-grain.com/ [R=301,L]
+
+# Если запрос - это реальный файл или директория, то пропустить все правила ниже
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Убрать .html
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
